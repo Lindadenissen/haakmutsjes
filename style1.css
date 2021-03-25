@@ -1,0 +1,286 @@
+* {
+  margin: 0px;
+  padding: 0px;
+}
+
+body {
+  font-family: Cambria, Cochin, Georgia, Times, "Times New Roman", serif;
+  margin: 5px 5px;
+  padding: 5px;
+  background-color: rgb(236, 158, 171);
+  background-image: url(/foto/achtergrond4.jpg);
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-blend-mode: overlay;
+}
+
+#header {
+  background-image: url(/foto/achtergrond3.jpg);
+  background-position: bottom;
+  color: rgb(17, 111, 114);
+  font-style: bold;
+  background-color: rgb(128, 221, 167);
+  background-blend-mode: overlay;
+  border: double 6px rgb(128, 67, 179);
+  border-radius: 20px;
+  font-family: pacifico;
+  text-align: center;
+  font-size: 16px;
+  margin: 10px;
+  padding: 20px;
+}
+
+.linkscontainer {
+  display: flex;
+  flex-direction: column;
+  text-align: center;
+  padding: 10px;
+  margin: 0px;
+}
+
+ul {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-evenly;
+  list-style: none;
+}
+
+li,
+a {
+  font-size: 18px;
+  color: rgb(8, 40, 82);
+}
+
+li :hover {
+  background-color: rgb(236, 158, 171);
+}
+
+.main {
+  padding: 20px 20px;
+  margin: 10px;
+  font-size: 20px;
+  color: black;
+}
+
+img {
+  padding: 20px;
+}
+
+.section,
+h2,
+p {
+  font-size: 18px;
+  font-family: Cambria, Cochin, Georgia, Times, "Times New Roman", serif;
+  text-align: left;
+  margin: 5px;
+}
+
+article {
+  padding: 10px;
+  margin: 10px;
+  background-color: transparent;
+}
+
+.plaatjes {
+  text-align: left;
+  padding: 30px;
+}
+
+.gridcontainer {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  margin: 20px 10px;
+}
+
+.contactformulier {
+  font-size: 30px;
+  text-align: center;
+  padding: 20px;
+}
+
+.form {
+  font-size: 20px;
+  text-align: left;
+}
+
+.buttongroup {
+  margin-top: 10px;
+  color: black;
+  font-size: 16px;
+  background-color: rgb(236, 158, 171);
+  text-align: center;
+}
+
+.footer {
+  margin-top: 40px;
+  text-align: left;
+  font-style: italic;
+}
+
+@media screen and (min-width: 1200px) {
+  body {
+    background-image: url(/foto/achtergrond3.jpg);
+    background-repeat: no-repeat;
+    background-position: top;
+    background-color: rgb(216, 158, 218);
+    background-blend-mode: screen;
+  }
+
+  #header {
+    background-image: url(./foto/banner.png);
+    background-position: center;
+    text-align: center;
+    font-size: 26px;
+    margin: 40px;
+    padding: 30px;
+  }
+
+  ul {
+    display: flex;
+    justify-content: space-evenly;
+    flex-direction: row;
+    margin: 40px 50px;
+  }
+
+  li a {
+    font-size: 25px;
+    color: rgb(87, 25, 122);
+  }
+
+  .main,
+  p {
+    font-size: 50px;
+  }
+
+  .plaatjes {
+    text-align: center;
+  }
+
+  section,
+  .gaby,
+  .linda,
+  .p {
+    text-align: left;
+    margin: 35px;
+    font-size: 25px;
+  }
+
+  .introductie,
+  h2 {
+    text-align: center;
+    font-size: 35px;
+  }
+
+  .introGaby,
+  .introLinda {
+    font-style: normal;
+  }
+
+  figure .profielfoto {
+    display: block;
+    width: 15%;
+    height: auto;
+    margin-left: auto;
+    margin-right: auto;
+    padding: 20px;
+  }
+
+  .omschrijving {
+    font-size: 20px;
+    font-style: normal;
+    margin: 20px;
+    text-align: center;
+  }
+
+  .plaatje1,
+  .plaatje2,
+  .plaatje3,
+  .plaatje4,
+  .plaatje5 {
+    display: inline-block;
+    width: 20%;
+  }
+
+  .contactformulier {
+    padding: 50px;
+    font-size: 40px;
+  }
+
+  .form {
+    display: block;
+    text-align: center;
+    padding: 10px;
+    margin: 30px;
+    font-size: 30px;
+  }
+
+  input {
+    height: 30px;
+    width: 200px;
+  }
+
+  .textarea {
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+  }
+
+  .buttongroup {
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    font-size: 20px;
+  }
+
+  .gridcontainer {
+    display: grid;
+    grid-template-columns: 50% 50%;
+    grid-template-rows: 50% auto;
+    grid-gap: 50px;
+    margin-right: 8 0px;
+    margin-left: 80px;
+    padding: 20px;
+  }
+
+  .video1 {
+    display: grid;
+    grid-row: 1 / 2;
+    grid-column: 1 / 2;
+    width: 400px;
+    height: 300px;
+  }
+
+  .video2 {
+    display: grid;
+    grid-row: 1 / 2;
+    grid-column: 2 / 3;
+    width: 400px;
+    height: 300px;
+  }
+
+  .video3 {
+    display: grid;
+    grid-row: 2 / 3;
+    grid-column: 1 / 2;
+    width: 400px;
+    height: 300px;
+  }
+
+  .video4 {
+    display: grid;
+    grid-row: 2 / 3;
+    grid-column: 2 / 3;
+    width: 400px;
+    height: 300px;
+  }
+
+  p,
+  .footer {
+    font-style: italic;
+    font-size: 18px;
+    margin: 40px;
+  }
+}
